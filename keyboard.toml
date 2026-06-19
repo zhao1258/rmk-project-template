@@ -1,7 +1,7 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "NRF Keyboard"
-product_name = "NRF Keyboard"
+name = "Keyboard"
+product_name = "KeyboardName"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "NRF"
@@ -29,3 +29,8 @@ keymap = [
         ["_", "_", "_", "_", "_"],
     ],
 ]
+# Encoder 0
+[[input_device.encoder]]
+pin_a = "P0_01"
+pin_b = "P0_02"
+phase = "default"
