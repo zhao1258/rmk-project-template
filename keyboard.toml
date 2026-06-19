@@ -1,6 +1,6 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "Keyboard"
+name = "KeyboardN"
 product_name = "KeyboardName"
 vendor_id = 0x4c4b
 product_id = 0x4643
