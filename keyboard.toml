@@ -5,7 +5,7 @@ product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-chip = "rp2040"
+chip = "NRF52840"
 
 [matrix]
 # Row and col pins are mandatory
@@ -16,20 +16,20 @@ col_pins = ["PIN_19", "PIN_20", "PIN_21"]
 # row2col = true
 
 [layout]
-rows = 4
+rows = 2
 cols = 3
 layers = 2
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["A", "B", "C", "D", "E"],
+        ["F", "G", "F", "I", "J"],
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+        ["_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_"],
     ],
 ]
+[[input_device.encoder]]
+pin_a = "P0_01"
+pin_b = "P0_02"
+phase = "default"
