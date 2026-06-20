@@ -25,8 +25,19 @@ direct_pin_low_active = true
 rows = 2
 cols = 5
 layers = 2
+keymap = [
+    [
+        ["A", "B", "C", "_", "_", "_"],
+        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)", "_", "_", "_"]
+    ],
+    [
+        ["_", "TT(1)", "TG(2)", "_", "_"],
+        ["_", "_", "_", "_", "_"]
+    ],
+]
+
 # Encoder 0
 [[input_device.encoder]]
-pin_a = "P1_04"
-pin_b = "P1_06"
+pin_a = "P1_01"
+pin_b = "P1_02"
 phase = "default"
