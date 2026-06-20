@@ -10,22 +10,33 @@ manufacturer = "NRF"
 chip = "nrf52840"
 
 [matrix]
-row_pins = [
-    "P0_17",  # Win+Q
-    "P0_20",  # Alt+W
-    "P0_22",  # Shift+E
-    "P0_24",  # Ctrl+R
-    "P1_00",  # T
-    "P0_31",  # 鼠标左键
-    "P0_29",  # Shift+鼠标右键
-    "P0_02",  # Backspace
-    "P1_15",  # Enter
-    "P1_13",  # Space
-]
-col_pins = [""]
+matrix_type = "direct_pin"
 
+# 2D array representing your direct-pin matrix
+direct_pins = [
+    ["P0_17","P0_20","P0_22","P0_24","P1_00","P0_11"],
+    ["P0_31","P0_29","P0_02","P1_15","P1_13","P1_11"]
+]
+
+# Pin behavior (default: true = active low with pull-up)
+direct_pin_low_active = true
+
+[layout]
+rows = 2
+cols = 5
+layers = 2
+keymap = [
+    [
+        ["A", "B", "C", "D", "E"],
+        ["F", "G", "F", "I", "J"]
+    ],
+    [
+        ["_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_"]
+    ],
+]
 # Encoder 0
 [[input_device.encoder]]
-pin_a = "P1_01"
-pin_b = "P1_02"
-button_pin = "P1_07"
+pin_a = "P0_07"
+pin_b = "P0_01"
+phase = "P1_07"
