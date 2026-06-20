@@ -39,5 +39,4 @@ keymap = [
 [[input_device.encoder]]
 pin_a = "P0_07"
 pin_b = "P0_01"
-button_pin = "P1_07"
 phase = "default"
