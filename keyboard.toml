@@ -24,6 +24,15 @@ layers = 2
 keymap = [
     [
         ["A", "B", "C", "D", "E"],
-        ["F", "G", "F", "I", "J"],
+        ["F", "G", "F", "I", "J"]
+    ],
+    [
+        ["_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_"]
     ],
 ]
+# Encoder 0
+[[input_device.encoder]]
+pin_a = "P0_01"
+pin_b = "P0_02"
+phase = "default"
