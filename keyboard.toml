@@ -25,7 +25,9 @@ direct_pin_low_active = true
 [[input_device.encoder]]
 pin_a = "P1_01"
 pin_b = "P1_02"
-phase = "default"
+phase = "resolution"
+resolution = 2
+internal_pullup = true
 
 [layout]
 rows = 2
