@@ -10,12 +10,16 @@ manufacturer = "NRF"
 chip = "nrf52840"
 
 [matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
+matrix_type = "direct_pin"
 
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+# 2D array representing your direct-pin matrix
+direct_pins = [
+    ["P0.17","P0.20","P0.22","P0.24","P1.00","P0.11"],
+    ["P0.31","P0.29","P0.02","P1.15","P1.13","P1.11"]
+]
+
+# Pin behavior (default: true = active low with pull-up)
+direct_pin_low_active = true
 
 [layout]
 rows = 2
