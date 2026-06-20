@@ -44,7 +44,3 @@ encoder_map = [
 pin_a = "P1_01"
 pin_b = "P1_02"
 phase = "default"
-
-[[layer]]  # Layer 0
-# ... keys ...
-encoders = [["A", "S"], ["D", "F"]]
