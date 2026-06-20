@@ -5,7 +5,7 @@
     "lighting": "none",
     "matrix": {
         "rows": 2,
-        "cols": 5
+        "cols": 6
     },
       "customKeycodes": [
 
