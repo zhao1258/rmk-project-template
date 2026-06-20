@@ -25,16 +25,6 @@ direct_pin_low_active = true
 rows = 2
 cols = 5
 layers = 2
-keymap = [
-    [
-        ["A", "B", "C", "D", "E", "F"],
-        ["G", "F", "I", "J", "L", "N"]
-    ],
-    [
-        ["_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_"]
-    ],
-]
 # Encoder 0
 [[input_device.encoder]]
 pin_a = "P1_04"
