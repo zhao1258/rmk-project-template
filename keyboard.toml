@@ -37,6 +37,6 @@ keymap = [
 ]
 # Encoder 0
 [[input_device.encoder]]
-pin_a = "P0_07"
-pin_b = "P0_01"
+pin_a = "P1_01"
+pin_b = "P1_02"
 phase = "default"
