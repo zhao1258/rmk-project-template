@@ -36,7 +36,7 @@ keymap = [
     ],
 ]
 encoder_map = [
-  [["AudioVolUp", "AudioVolDown"], ["PageDown", "PageUp"]]
+  [["Q", "W"], ["E", "R"]]
 ]
 
 # Encoder 0
@@ -45,3 +45,6 @@ pin_a = "P1_01"
 pin_b = "P1_02"
 phase = "default"
 
+[[layer]]  # Layer 0
+# ... keys ...
+encoders = [["A", "S"], ["D", "F"]]
