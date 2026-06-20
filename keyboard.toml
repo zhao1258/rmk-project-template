@@ -35,7 +35,7 @@ keymap = [
         ["_", "_", "_", "_", "_"]
     ],
 ]
-encoder_map = [
+encoders = [
   [["AudioVolUp", "AudioVolDown"],
   ["PageDown", "PageUp"]],
 ]
