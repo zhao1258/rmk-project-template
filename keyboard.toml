@@ -35,12 +35,13 @@ keymap = [
         ["_", "_", "_", "_", "_"]
     ],
 ]
-encoder_map = [
-  [["Q", "W"], ["E", "R"]]
-]
 
 # Encoder 0
 [[input_device.encoder]]
 pin_a = "P1_01"
 pin_b = "P1_02"
 phase = "default"
+
+[[layer]]  # Layer 0
+# ... keys ...
+encoders = [["A", "S"], ["D", "F"]]
