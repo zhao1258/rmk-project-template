@@ -21,27 +21,26 @@ direct_pins = [
 # Pin behavior (default: true = active low with pull-up)
 direct_pin_low_active = true
 
-[layout]
-rows = 2
-cols = 5
-layers = 2
-keymap = [
-    [
-        ["_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_"]
-    ],
-    [
-        ["_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_"]
-    ],
-]
-
 # Encoder 0
 [[input_device.encoder]]
 pin_a = "P1_01"
 pin_b = "P1_02"
 phase = "default"
 
-[[layer]]  # Layer 0
-# ... keys ...
-encoders = [["A", "S"]]
+[layout]
+rows = 2
+cols = 5
+layers = 2
+keymap = [
+    [
+        ["Q", "W", "E", "R", "T"],
+        ["Y", "U", "I", "O", "P"]
+    ],
+    [
+        ["A", "S", "D", "F", "G"],
+        ["H", "J", "K", "L", "P"]
+    ],
+]
+encoder_map = [
+  [["Q", "W"], ["E", "R"]]
+]
