@@ -44,4 +44,4 @@ phase = "default"
 
 [[layer]]  # Layer 0
 # ... keys ...
-encoders = [["A", "S"], ["D", "F"]]
+encoders = [["A", "S"]]
