@@ -27,13 +27,17 @@ cols = 5
 layers = 2
 keymap = [
     [
-        ["A", "B", "C", "D", "E"],
-        ["F", "G", "H", "I", "J"]
+        ["_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_"]
     ],
     [
         ["_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_"]
     ],
+]
+encoder_map = [
+  [["AudioVolUp", "AudioVolDown"],
+  ["PageDown", "PageUp"]],
 ]
 
 # Encoder 0
