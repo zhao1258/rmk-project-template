@@ -21,7 +21,7 @@ cols = 3
 layers = 2
 keymap = [
     [
-        ["A", "B", "C"],
+        ["A", "B", "D"],
         ["Kc1", "Kc2", "Kc3"],
         ["LCtrl", "MO(1)", "LShift"],
         ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
