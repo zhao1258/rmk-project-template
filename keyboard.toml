@@ -14,7 +14,7 @@ matrix_type = "direct_pin"
 # 2D array representing your direct-pin matrix
 direct_pins = [
     ["P1_07"],
-    ["P1_02","P1_01"],
+    ["_","P1_02","P1_01"],
     ["P0_17","P1_00","P0_02"],
     ["P0_20","P0_11","P1_15"],
     ["P0_22","P0_31","P1_13"],
@@ -47,7 +47,7 @@ layers = 2
 keymap = [
     [
         ["A"],
-        ["B", "C"],
+        ["_","B", "C"],
         ["D", "E", "F"],
         ["G", "H", "I"],
         ["J", "K", "L"],
