@@ -4,30 +4,59 @@ name = "RMK Keyboard"
 product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "RMK"
-chip = "rp2040"
+manufacturer = "NRF"
+chip = "nrf52840"
+usb_enable = true
 
 [matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
+matrix_type = "direct_pin"
 
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+# 2D array representing your direct-pin matrix
+direct_pins = [
+    ["P1_07","_","_"],
+    ["_""P1_02","P1_01"],
+    ["P0_17","P1_00","P0_02"],
+    ["P0_20","P0_11","P1_15"],
+    ["P0_22","P0_31","P1_13"],
+    ["P0_24","P0_29","P1_11"],
+]
+
+# Pin behavior (default: true = active low with pull-up)
+direct_pin_low_active = true
+
+# Encoder 0
+[[input_device.encoder]]
+pin_a = "P1_04"
+pin_b = "P1_06"
+phase = "resolution"
+resolution = 2
+internal_pullup = true
+
+# Encoder 1
+[[input_device.encoder]]
+pin_a = "P0_10"
+pin_b = "P0_09"
+phase = "resolution"
+resolution = 2
+internal_pullup = true
 
 [layout]
-rows = 4
+rows = 6
 cols = 3
 layers = 2
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["A","_","_"],
+        ["_","B", "C"],
+        ["D", "E", "F"],
+        ["G", "H", "I"],
+        ["J", "K", "L"],
+        ["N", "M", "O"]
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
+		["_","_","_"],
+        ["_","_", "_"],
+        ["_", "_", "_"],
         ["_", "_", "_"],
         ["_", "_", "_"],
         ["_", "_", "_"]
