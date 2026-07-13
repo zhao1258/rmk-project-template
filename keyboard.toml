@@ -5,13 +5,12 @@ product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-chip = "nrf52840"
-usb_enable = true
+chip = "rp2040"
 
 [matrix]
 # Row and col pins are mandatory
-row_pins = ["P1_07", "P1_02", "P1_01", "P0_17"]
-col_pins = ["P1_00", "P0_02", "P0_20"]
+row_pins = ["PIN_1", "PIN_2", "PIN_3", "PIN_4"]
+col_pins = ["PIN_5", "PIN_6", "PIN_7"]
 
 # RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
 # row2col = true
