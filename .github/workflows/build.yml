@@ -9,6 +9,6 @@ jobs:
   build:
     uses: haobogu/rmk/.github/workflows/user_build.yml@main
     with:
-      toolchain_toml_path: "toolchain.toml"
+      rust-toolchain_toml_path: "rust-toolchain.toml"
       keyboard_toml_path: "keyboard.toml"
       vial_json_path: "vial.json"
