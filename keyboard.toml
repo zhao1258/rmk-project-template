@@ -5,35 +5,35 @@ product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-chip = "rp2040"
+chip = "nrf52840"
 usb_enable = true
 
 [matrix]
 matrix_type = "direct_pin"
 # 2D array representing your direct-pin matrix
 direct_pins = [
-    ["PIN_1","_","_"],
-    ["_","PIN_2","PIN_3"],
-    ["PIN_4","PIN_5","PIN_6"],
-    ["PIN_7","PIN_8","PIN_9"],
-    ["PIN_10","PIN_11","PIN_12"],
-    ["PIN_13","PIN_14","PIN_15"],
+    ["P1_07","_","_"],
+    ["_","P1_02","P1_01"],
+    ["P0_17","P1_00","P0_02"],
+    ["P0_20","P0_11","P1_15"],
+    ["P0_22","P0_31","P1_13"],
+    ["P0_24","P0_29","P1_11"],
 ]
 # Pin behavior (default: true = active low with pull-up)
 direct_pin_low_active = true
 
 # Encoder 0
 [[input_device.encoder]]
-pin_a = "PIN_17"
-pin_b = "PIN_18"
+pin_a = "P0_09"
+pin_b = "P0_10"
 phase = "resolution"
 resolution = 2
 internal_pullup = true
 
 # Encoder 1
 [[input_device.encoder]]
-pin_a = "PIN_19"
-pin_b = "PIN_20"
+pin_a = "P1_04"
+pin_b = "P1_06"
 phase = "resolution"
 resolution = 2
 internal_pullup = true
