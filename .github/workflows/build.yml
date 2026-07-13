@@ -1,4 +1,4 @@
-name: Install Rust toolchain
+name: Build RMK firmware
 on:
   workflow_dispatch:
   push:
@@ -9,6 +9,6 @@ jobs:
   build:
     uses: haobogu/rmk/.github/workflows/user_build.yml@main
     with:
-      rust-toolchain_path: "rust-toolchain.toml"
+      rust-toolchain_toml_path: "rust-toolchain.toml"
       keyboard_toml_path: "keyboard.toml"
       vial_json_path: "vial.json"
