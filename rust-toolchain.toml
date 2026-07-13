@@ -1,5 +1,4 @@
 [toolchain]
 channel = "1.96.0"
-targets = ["thumbv7em-none-eabihf"] # nRF52840 的目标架构
-# 如果是其他芯片，请修改 targets，例如 RP2040 为 thumbv6m-none-eabi
+targets = ["thumbv7em-none-eabihf"]
 components = ["rust-src"]
